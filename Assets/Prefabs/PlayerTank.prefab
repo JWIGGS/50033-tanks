@@ -626,7 +626,7 @@ MonoBehaviour:
   m_FireTransform: {fileID: 4841468342918690}
   m_ShootingAudio: {fileID: 82552250368204192}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
-  m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
+  m_FireClip: {fileID: 8300000, guid: 3e703194c2d4c964482d1fbb919c326f, type: 3}
   m_TurretObject: {fileID: 1661778475660716}
   m_FireRate: 0.3
   m_ShellSpeed: 30
