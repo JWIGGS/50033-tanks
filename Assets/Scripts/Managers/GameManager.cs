@@ -8,21 +8,26 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int m_NumRoundsToWin = 5;            
-    public float m_StartDelay = 3f;             
-    public float m_EndDelay = 3f;               
-    public CameraControl m_CameraControl;       
-    public Text m_MessageText;                  
+    public int m_NumRoundsToWin = 5;
+    public float m_StartDelay = 1f;
+    public float m_EndDelay = 1f;
+    public CameraControl m_CameraControl;
+    public Text m_MessageText;
     public GameObject[] m_TankPrefabs;
-    public TankManager[] m_Tanks;               
+    public TankManager[] m_Tanks;
     public List<Transform> wayPointsForAI;
 
-    private int m_RoundNumber;                  
-    private WaitForSeconds m_StartWait;         
-    private WaitForSeconds m_EndWait;           
-    private TankManager m_RoundWinner;          
-    private TankManager m_GameWinner;           
+    private int m_RoundNumber;
+    private WaitForSeconds m_StartWait;
+    private WaitForSeconds m_EndWait;
+    private TankManager m_RoundWinner;
+    private TankManager m_GameWinner;
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     private void Start()
     {

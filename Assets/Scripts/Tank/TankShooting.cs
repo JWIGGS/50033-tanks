@@ -35,13 +35,14 @@ public class TankShooting : MonoBehaviour
 
         if (m_TurretObject != null)
         {
-            Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Plane p = new Plane(Vector3.up, m_TurretObject.transform.position);
-            if (p.Raycast(mouseRay, out float hitDist))
-            {
-                Vector3 hitPoint = mouseRay.GetPoint(hitDist);
-                m_TurretObject.transform.LookAt(hitPoint);
-            }
+            // Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // Plane p = new Plane(Vector3.up, m_TurretObject.transform.position);
+            // if (p.Raycast(mouseRay, out float hitDist))
+            // {
+            //     Vector3 hitPoint = mouseRay.GetPoint(hitDist);
+            //     m_TurretObject.transform.LookAt(hitPoint);
+            // }
+            m_TurretObject.transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0));
         }
 
 

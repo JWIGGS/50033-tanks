@@ -309,4 +309,20 @@ InputManager:
     type: 0
     axis: 0
     joyNum: 2
+  - serializedVersion: 3
+    m_Name: Mouse X
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.001
+    sensitivity: 0.3
+    snap: 0
+    invert: 0
+    type: 1
+    axis: 0
+    joyNum: 2
   m_UsePhysicalKeys: 0
